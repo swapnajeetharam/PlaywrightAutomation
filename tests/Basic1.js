@@ -61,6 +61,4 @@ for (let k=1;k<=100;k++)
     if(n==3)
     break
  }
-
-
-
+ 

@@ -49,10 +49,13 @@ fruits.sort()
 console.log(fruits)
 
 var scores1=[12,3,19,16,14]
+console.log(scores1.sort())
 
 console.log(scores1.sort(),typeof(scores1))
 
-console.log(scores1.sort((a,b)=>a-b))
+console.log(scores1.sort((a,b)=>a-b))//lamda function
+
+
 
 
 
