@@ -1,5 +1,5 @@
 //swapna jeetharam is an employee of PwC- ram'
-var name='swapna jeetharam is a an employee of PwC ram'
+var name='swapna jeetharam is an employee of PwC ram'
 var first_char=name[0]
 
 /*var split_name=name.split("a")
@@ -22,8 +22,8 @@ console.log(res1)
 let count=0
 while(res1!==-1){
     count++
-    res2 =name.indexOf("ram",(res2+1)) 
-    console.log(res2)   
+    res1 =name.indexOf("ram",(res1+1)) 
+    console.log(res1)   
 }
 console.log(count)
 

@@ -16,3 +16,15 @@ let diff=nextdate-date
 console.log(diff)
 
 //parseint or toString or indexof
+
+let person={
+    firstName:'Tim',
+    lastName:'Joe',
+    fullname :function(){
+       console.log(this.firstName+this.lastName)
+    }    
+}
+
+for(let key in person){
+    console.log(person[key])
+}
