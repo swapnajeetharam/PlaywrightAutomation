@@ -26,9 +26,9 @@ const config=({
   workers: process.env.CI ? 1 : undefined,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   reporter: 'html',
-  timeout:40*1000,
+  timeout:60000,
   expect:{
-    timeout:50000,
+  timeout:60000,
   },
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
@@ -39,6 +39,7 @@ const config=({
     trace: 'on-first-retry',
     project:'chromium',
     browserName: 'chromium',
+    slowMo: 5000,
     headless: false,
   }
 });

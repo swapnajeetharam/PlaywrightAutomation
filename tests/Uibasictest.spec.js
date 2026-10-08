@@ -9,6 +9,7 @@ there are totally 4 fixtures= browser, page
 JS is asynchronous , code is excetured in non sequential manner. Await is added at each step*/
 
 const {test,expect} = require('@playwright/test');
+
 // @playwright/test- module, playwright is library  ,test is function
 //import { test } from '@playwright/test';
 
@@ -33,7 +34,7 @@ css -> parenttagname >> childtagname
 
 If needs to write the locator based on text  
 text=''
-*
+*/
 
 //const {test} = require('@playwright/test');
 /*test("test1: browser context playwright test",async ({browser})=>// test annotation, browser= fixture
@@ -60,7 +61,7 @@ test("test3: context and page checking",async ({browser})=>// test annotation, b
 }
 )*/
 
-test("Test4 : login to Rahul shetty Academy page",async({page})=>
+test.only("Test4 : login to Rahul shetty Academy page",async({page})=>
 {
     await page.goto("https://rahulshettyacademy.com/loginpagePractice/");
     console.log( await page.title());
@@ -69,6 +70,11 @@ test("Test4 : login to Rahul shetty Academy page",async({page})=>
     // css selector or xpath - used to identify element uniquely on the webpages
     await page.locator('#username').fill('rahulshettyacademy');//tagename is optionsal
     await page.locator('[type="password"]').fill('Learning');
-    await page.locator('#terms').check();
+    //await page.locator('#terms').check();
+    await page.pause(); await page.pause();
     await page.locator('#signInBtn').click();
+    //await test.setTimeout(70000);
+    //await page.waitForTimeout(10000); // keeps browser open for 10s
+    // interactive pause until you resume
+    //capture error message
 });
