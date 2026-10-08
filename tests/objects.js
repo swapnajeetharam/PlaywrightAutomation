@@ -1,5 +1,6 @@
 //object is collection of properties
-const people = require("./class")
+const people = require("./class")//class is the filename here
+
 let person={
     firstName:'Tim',
     lastName:'Joe',

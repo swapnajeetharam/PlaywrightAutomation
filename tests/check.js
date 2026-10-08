@@ -28,3 +28,13 @@ let person={
 for(let key in person){
     console.log(person[key])
 }
+
+var fName=['Swapna','pinky','anil']
+console.log(fName.reverse())
+
+var lName='Swapna'
+var lName_len=lName.length
+console.log(lName_len,lName[0])
+for(let i=lName.length;i<=lName.length;i--){
+    console.log(i,lName[i])
+}
