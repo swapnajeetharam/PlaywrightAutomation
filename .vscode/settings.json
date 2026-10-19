@@ -1,0 +1,4 @@
+{
+    "playwright.reuseBrowser": true,
+    "github.copilot.chat.localIndex.enabled": true
+}
