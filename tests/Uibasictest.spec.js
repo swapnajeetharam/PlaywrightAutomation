@@ -131,7 +131,7 @@ test("dropdown test script", async ({ page }) => {
     
 });
 
-test("radio button and checkbox test script", async ({ page }) => {
+test.only("radio button and checkbox test script", async ({ page }) => {
     await page.goto("https://rahulshettyacademy.com/loginpagePractise");
     await page.locator("#username").fill("rahulshettyacademy"); //rahulshettyacademy
     await page.locator("#password").fill("Learning\@830\$3mK2");
@@ -151,8 +151,8 @@ test("radio button and checkbox test script", async ({ page }) => {
     console.log("checkbox test script starts here");
     await page.locator("input#terms").click();//isChecked()
     await expect(page.locator("input#terms")).toBeChecked();
-    await expect(page.locator("input#terms")).uncheck();
-    expect(await page.locator('#terms').isChecked()).toBeFalsy();
+    expect(await page.locator("input#terms").uncheck());
+     expect(await page.locator('#terms').isChecked()).toBeFalsy();
         
     await page.pause();
 });
@@ -163,7 +163,7 @@ test("blinking text", async ({ page }) => {
     await expect(doclink).toHaveAttribute("class", "blinkingText");//allTextContents() fetches text
     });
 
-test.only("child windows", async({browser})=>
+test("child windows", async({browser})=>
 {
 const context=await browser.newContext();
 const page=await context.newPage();
