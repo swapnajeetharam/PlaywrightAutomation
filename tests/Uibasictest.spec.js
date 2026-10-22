@@ -108,6 +108,7 @@ test('@Web Client App login', async ({ page }) => {
    await page.locator(".card-body b").first().waitFor();
    const titles = await page.locator(".card-body b").allTextContents();
    console.log(titles);
+   
    //for(let products in titles)
    //{console.log(products)}
    await page.pause() 
