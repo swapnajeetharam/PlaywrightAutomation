@@ -178,7 +178,7 @@ const page=await context.newPage();
  doc_link.click(),
 ])
  
- const newPageTxtVaidtn = await newPage.locator(".red").textContent();
+const newPageTxtVaidtn = await newPage.locator(".red").textContent();
 console.log(newPageTxtVaidtn);
 }
 )
